@@ -1,0 +1,219 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: #191919;
+}
+
+.comment {
+  color: @boulder;
+}
+
+.string {
+  color: @icterine;
+}
+
+.constant.numeric {
+  color: @rich-lilac;
+}
+
+.constant.language {
+  color: @rich-lilac;
+}
+
+.constant.character, .constant.other {
+  color: @rich-lilac;
+}
+
+.variable {
+}
+
+.variable.other.readwrite.instance {
+  color: @neon-carrot;
+}
+
+.constant.character.escaped, .constant.character.escape, .string .source, .string .source.ruby {
+  color: @screamin-green;
+}
+
+.keyword {
+  color: @wild-strawberry;
+}
+
+.storage {
+  color: @wild-strawberry;
+}
+
+.storage.type {
+  font-style: italic;
+  color: @aqua;
+}
+
+.entity.name.class {
+  text-decoration: underline;
+  color: @screamin-green;
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: @screamin-green;
+}
+
+.entity.name.function {
+  color: @screamin-green;
+}
+
+.variable.parameter {
+  font-style: italic;
+  color: @neon-carrot;
+}
+
+.entity.name.tag {
+  color: @wild-strawberry;
+}
+
+.entity.other.attribute-name {
+  color: @screamin-green;
+}
+
+.support.function {
+  color: @aqua;
+}
+
+.support.constant {
+  color: @aqua;
+}
+
+.support.type, .support.class {
+  font-style: italic;
+  color: @aqua;
+}
+
+.support.other.variable {
+}
+
+.invalid {
+  color: @desert-storm;
+  background-color: @wild-strawberry;
+}
+
+.invalid.deprecated {
+  color: @desert-storm;
+  background-color: @rich-lilac;
+}
+
+.meta.structure.dictionary.json .string.quoted.double.json {
+  color: @desert-storm;
+}
+
+.meta.diff, .meta.diff.header {
+  color: @aqua;
+}
+
+.markup.deleted {
+  color: @wild-strawberry;
+}
+
+.markup.inserted {
+  color: @screamin-green;
+}
+
+.markup.changed {
+  color: @icterine;
+}
+
+.constant.numeric.line-number.find-in-files:not(.match) {
+  color: #bd93f9;
+}
+
+.entity.name.filename {
+  color: #E6DB74;
+}
+
+.message.error {
+  color: #F83333;
+}
+
+.punctuation.definition.string.begin.json:not(.meta.structure.dictionary.value.json), .punctuation.definition.string.end.json:not(.meta.structure.dictionary.value.json) {
+  color: #EEEEEE;
+}
+
+.meta.structure.dictionary.json .string.quoted.double.json {
+  color: @aqua;
+}
+
+.meta.structure.dictionary.value.json .string.quoted.double.json {
+  color: @icterine;
+}
+
+.meta .meta .meta .meta .meta .meta .meta.structure.dictionary.value .string {
+  color: @screamin-green;
+}
+
+.meta .meta .meta .meta .meta .meta.structure.dictionary.value .string {
+  color: @neon-carrot;
+}
+
+.meta .meta .meta .meta .meta.structure.dictionary.value .string {
+  color: @wild-strawberry;
+}
+
+.meta .meta .meta .meta.structure.dictionary.value .string {
+  color: @rich-lilac;
+}
+
+.meta .meta .meta.structure.dictionary.value .string {
+  color: @screamin-green;
+}
+
+.meta .meta.structure.dictionary.value .string {
+  color: @neon-carrot;
+}
