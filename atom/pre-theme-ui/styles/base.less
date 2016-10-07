@@ -20,3 +20,24 @@ atom-pane {
     border-right: none;
   }
 }
+
+.tree-view-resizer, atom-text-editor::shadow  {
+  ::-webkit-scrollbar {
+    background-color: @very-dark-gray;
+    width: 5px;
+
+    &-track {}
+
+    &-thumb {
+      background-color: @desert-storm;
+
+      &:window-inactive {
+        background-color: @gray;
+      }
+    }
+
+    &-corner {
+      background-color: @very-dark-gray;
+    }
+  }
+}
