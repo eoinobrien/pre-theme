@@ -191,6 +191,18 @@ $ git clone https://github.com/leandromatos/pre-theme/
 3. Click *Click Import Color Scheme...*
 4. Select the **Select the Pre.spTheme file** file
 
+## Atom<a id="atom"></a>
+### Install manually
+
+Download using the [GitHub .zip download](https://github.com/leandromatos/pre-theme/archive/master.zip) option and unzip them.
+
+### Activate the theme
+
+1. Open a terminal and navigate to the **pre-theme/atom** folder
+2. Run **cd pre-theme-syntax && apm link . && cd ../pre-theme-ui && apm link .**
+3. Reopen any version of Atom, and open up *Edit > Preferences*
+4. Select Themes from the Sidebar
+5. In both the **UI Theme** and **Syntax Theme** select **Pre**
 
 ## Contributing
 
